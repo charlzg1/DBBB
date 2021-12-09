@@ -10,7 +10,7 @@ Ban Date, Expiry date
 Battlemetrics profile link
 Server banned on
 
-In ![Configuration Two](https://discord.com/channels/897876543622238290/918299251132473384/918355305853759489)
+In Configuration Two
 Player name, Admin name
 Reason
 Ban Date, Expiry date
@@ -23,5 +23,3 @@ Player name, Admin name
 Reason
 Ban Date, Expiry date
 Battlemetrics profile link
-
-Each Configuration can be seen here 
