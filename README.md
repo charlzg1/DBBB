@@ -7,6 +7,14 @@ Use the config.ini file to set discordToken, discordTextChannelId, battlemetrics
 Setup
 Script is written in Python 3.8
 
-Run the following to setup the environment:
-
+1.Run the following to setup the environment:
 <code>$ pip install -r requirements.txt<code>
+
+2.Edit lines, 7, 9,11,15,17 and 19(if you wish)
+on line 7 include the full discord Username and number
+on line 9 include your discord bot token
+on line 11 include the discord channel id you wish for the bot to send the message into
+
+on line 15 you need to create a BM access token, and imput this here
+on line 17 input your ban list ID
+If you wish to change the polling interval change this setting on line 19
