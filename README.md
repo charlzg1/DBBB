@@ -25,4 +25,4 @@ on line 17 input your ban list ID
 
 If you wish to change the polling interval change this setting on line 19
 
-There are multiple message configurations these can all be located in [message configurations](Message Configurations/Configurations.md)
+There are multiple message configurations these can all be located in [message configurations](MessageConfigurations/Configurations.md)
