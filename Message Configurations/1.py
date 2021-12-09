@@ -1,4 +1,4 @@
-        def create_embed_of_ban(self, ban):
+def create_embed_of_ban(self, ban):
         """ Creates an embed of a ban. """
         embedVar = discord.Embed(title="Banned Player", color=0x00ff00)
         embedVar.add_field(name="PLAYER NAME", value=ban[BanInfo.PLAYER_NAME.value], inline=True)
