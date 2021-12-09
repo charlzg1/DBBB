@@ -9,4 +9,4 @@ Script is written in Python 3.8
 
 Run the following to setup the environment:
 
-$ pip install -r requirements.txt
+<code>$ pip install -r requirements.txt<code>
