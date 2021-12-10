@@ -39,7 +39,7 @@ class BanInfo(Enum):
     ADMIN_NAME      = 7
 
 
-class DiscordBotBattlemetricsBanNotifier(discord.Client):
+class DiscordBanBot(discord.Client):
     """ Discord Ban Bot """
     def __init__(self, **options):
         """ Init. """
@@ -192,5 +192,5 @@ def config_check():
 
 if __name__ == "__main__":
     config_check()
-    bot = DiscordBotBattlemetricsBanNotifier()
+    bot = DiscordBanBot()
     bot.run(DC_TOKEN)
