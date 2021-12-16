@@ -13,7 +13,7 @@ Ban notes
 Server Banned on
 Admin name
 
-![](images/default.png)
+![](Images/Default.png)
 
 IN Configuration One- 
 Player name, Admin name
@@ -21,7 +21,7 @@ Reason
 Ban Date, Expiry date
 Battlemetrics profile link
 Server banned on
-![](images/config1.png)
+![](Images/config1.png)
 
 In Configuration Two
 Player name, Admin name
@@ -30,7 +30,7 @@ Ban Date, Expiry date
 Battlemetrics profile link
 Ban Notes
 Server banned on
-![](images/config2.png)
+![](Images/config2.png)
 
 In Configuration Three-
 Player name, Admin name
@@ -38,4 +38,4 @@ Reason
 Ban Date, Expiry date
 Battlemetrics profile link
 
-![](images/config3.png)
+![](Images/config3.png)
