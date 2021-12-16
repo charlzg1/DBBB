@@ -39,7 +39,7 @@ class BanInfo(Enum):
     SERVER          = 7
 
 
-class DiscordBotBattlemetricsBanNotifier(discord.Client):
+class DiscordBanNotifier(discord.Client):
     """ Discord Ban Bot """
     def __init__(self, **options):
         """ Init. """
@@ -151,17 +151,18 @@ def get_banlist(url, headers):
         elif include["type"] == "user":
             tempBanner[include["id"]] = include["attributes"]["nickname"]
 
-    playerNames, banner, banReasons, timeBanned, timeUnbanned, userID,banNote, server= ([] for i in range(8))
+    playerNames, banReasons, timeBanned, timeUnbanned, userID,banNotes, server, banner = ([] for i in range(8))
     for ban in banList["data"]:
         playerNames.append(ban["meta"]["player"])
-        banner.append(tempBanner[ban["relationships"]["user"]["data"]["id"]])
         banReasons.append(ban["attributes"]["reason"].replace(" ({{duration}} ban) - Expires in {{timeLeft}}.", ""))
         timeBanned.append(ban["attributes"]["timestamp"].replace("T", " ")[:-5])
         expires = ban["attributes"]["expires"]
         timeUnbanned.append(expires.replace("T", " ")[:-5] if expires != None else "Indefinitely")
         userID.append(ban["relationships"]["player"]["data"]["id"])
-        banNote.append(ban["attributes"]["note"])
+        banNote = ban["attributes"]["note"]
+        banNotes.append(banNote.replace("_", " ") if expires != None else "None")
         server.append(tempServer[ban["relationships"]["server"]["data"]["id"]])
+        banner.append(tempBanner[ban["relationships"]["user"]["data"]["id"]])
 
 
 
@@ -193,5 +194,5 @@ def config_check():
 
 if __name__ == "__main__":
     config_check()
-    bot = DiscordBotBattlemetricsBanNotifier()
+    bot = DiscordBanNotifier()
     bot.run(DC_TOKEN)
