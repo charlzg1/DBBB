@@ -151,7 +151,7 @@ def get_banlist(url, headers):
         elif include["type"] == "user":
             tempBanner[include["id"]] = include["attributes"]["nickname"]
 
-    playerNames, banReasons, timeBanned, timeUnbanned, userID,banNote, server, banner = ([] for i in range(8))
+    playerNames, banReasons, timeBanned, timeUnbanned, userID,banNotes, server, banner = ([] for i in range(8))
     for ban in banList["data"]:
         playerNames.append(ban["meta"]["player"])
         banReasons.append(ban["attributes"]["reason"].replace(" ({{duration}} ban) - Expires in {{timeLeft}}.", ""))
@@ -159,7 +159,8 @@ def get_banlist(url, headers):
         expires = ban["attributes"]["expires"]
         timeUnbanned.append(expires.replace("T", " ")[:-5] if expires != None else "Indefinitely")
         userID.append(ban["relationships"]["player"]["data"]["id"])
-        banNote.append(ban["attributes"]["note"].replace("_", " "))
+        banNote = ban["attributes"]["note"]
+        banNotes.append(banNote.replace("_", " ") if expires != None else "None")
         server.append(tempServer[ban["relationships"]["server"]["data"]["id"]])
         banner.append(tempBanner[ban["relationships"]["user"]["data"]["id"]])
 
