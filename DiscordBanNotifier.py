@@ -159,7 +159,7 @@ def get_banlist(url, headers):
         expires = ban["attributes"]["expires"]
         timeUnbanned.append(expires.replace("T", " ")[:-5] if expires != None else "Indefinitely")
         userID.append(ban["relationships"]["player"]["data"]["id"])
-        banNote.append(ban["attributes"]["note"])
+        banNote.append(ban["attributes"]["note"].replace("_", " "))
         server.append(tempServer[ban["relationships"]["server"]["data"]["id"]])
         banner.append(tempBanner[ban["relationships"]["user"]["data"]["id"]])
 
