@@ -11,7 +11,7 @@ Script is written in Python 3.8
 
 ```$ pip install -r requirements.txt```
 
-2.Edit lines, 7, 9,11,15,17 and 19(if you wish)
+2.Edit lines, 7, 9,11,15,17 and 19(if you wish) in the config.ini
 
 on line 7 include the full discord Username and number
 
