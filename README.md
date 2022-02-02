@@ -2,8 +2,6 @@
 
 A bot that uses the Battlemetrics API to poll information about recently banned players and updates a discord servers Bans text channel automatically whenever it detect new bans.
 
-Use the config.ini file to set discordToken, discordTextChannelId, battlemetricsToken, banListId. You can also set the polling interval (time between every poll of banlist data), prefix for commands and a comma seperated list of names of admins that are allowed to operate bot commands.
-
 Setup
 Script is written in Python 3.8
 
@@ -26,3 +24,5 @@ on line 17 input your ban list ID
 If you wish to change the polling interval change this setting on line 19
 
 There are multiple message configurations these can all be located in [message configurations](MessageConfigurations/Configurations.md)
+
+*known issue- Names with Non UTF-8 Charicters wont be posted due to them characters
