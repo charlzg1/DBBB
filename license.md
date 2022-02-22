@@ -5,4 +5,4 @@ Copyright (C) Charlz INC - All Rights Reserved
 
   * DiscordBattlemetricsBanBot can not be copied and/or distributed without the express
   * permission of Charles Girling
-  *Who may revoke permission to use this software at any point.
+  * Who may revoke permission to use this software at any point.
