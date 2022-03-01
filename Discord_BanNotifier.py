@@ -60,12 +60,6 @@ class DiscordBanBot(discord.Client):
             if command == "MANUALBANLISTPOLL":
                 print("Running manual poll")
                 self.update()
-            elif command == "LASTBAN":
-                banList = get_banlist(URL, HEADERS)
-                server = self.getServer(banList)
-                admin = self.getAdmin(banList)
-                if banList != []:
-                    await message.author.send(embed=self.create_embed_of_ban(banList["data"][0], server, admin))
 
     def polling_thread(self, event):
         """ Polling thread that runs every UPDATE_TIMER second """
