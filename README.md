@@ -23,5 +23,6 @@ on line 17 input your ban list ID, this can be found by going to ban lists-selec
 
 If you wish to change the polling interval change this setting on line 19
 
-
+To change embed config type, change value on bottom line in the config between 0 and 3
+  
 *known issue- Names with Non UTF-8 Charicters wont be posted due to them characters
