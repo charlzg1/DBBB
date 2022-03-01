@@ -23,6 +23,5 @@ on line 17 input your ban list ID, this can be found by going to ban lists-selec
 
 If you wish to change the polling interval change this setting on line 19
 
-There are multiple message configurations these can all be located in [message configurations](MessageConfigurations/Configurations.md)
 
 *known issue- Names with Non UTF-8 Charicters wont be posted due to them characters
