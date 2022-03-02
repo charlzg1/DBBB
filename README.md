@@ -1,6 +1,7 @@
 # DiscordBattlemetricsBanBot
 
-This code is still a WIP and may have some issues, any issues open a pull request or send me a message on discord @Charlz#6930
+**This code is still a WIP and may have some issues, any issues open a pull request or send me a message on discord @Charlz#6930**
+
 A bot that uses the Battlemetrics API to poll information about recently banned players and updates a discord servers Bans text channel automatically whenever it detect new bans.
 
 Setup
